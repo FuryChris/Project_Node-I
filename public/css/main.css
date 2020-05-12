@@ -15,6 +15,12 @@ main {
   margin: auto;
 }
 
+img {
+  width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
 .centered {
   text-align: center;
 }
@@ -72,24 +78,29 @@ main {
 }
 
 .product {
-  width: 20rem;
+  width: 17rem;
   min-height: 20rem;
   margin: 1rem 1rem;
   display: block;
-  background-color: rgba(15, 85, 85, 0.247);
-  border: solid 5px rgba(85, 15, 15, 0.507);
-  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(85, 15, 15);
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 3px 10px black;
+  box-shadow: 0 3px 5px black;
 }
 
-.test0 {
-  justify-content: center;
+.product__title {
+  margin: 1rem;
+}
+
+.product__price {
+  margin: 0.5rem;
+}
+
+.product__image {
   width: 100%;
-  padding: 3rem;
-  background-color: teal;
-  color: red;
-  display: flex;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .test1 {
@@ -98,7 +109,7 @@ main {
   border-width: 10px;
   width: 90%;
   padding: 5px;
-  background-color: rgb(0, 128, 64);
+  background-color: rgba(0, 128, 64, 0.616);
   color: red;
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +139,7 @@ main {
 
 .slideshow-container img {
   height: 15rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -203,7 +214,7 @@ main {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.3;
   }
 
   to {
