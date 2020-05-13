@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 
-const MONGO_CONNECTION = '';
+const MONGO_CONNECTION = 'mongodb+srv://chris-RWuser:hAZ6DuiEbIr4TMdI@cluster0-qn7m4.mongodb.net/shop?retryWrites=true&w=majority';
 const app = express();
 
 app.set('view engine', 'ejs');
