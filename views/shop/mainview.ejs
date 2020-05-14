@@ -3,31 +3,31 @@
 
 <body>
     <%- include('../includes/navigation.ejs') %>
-</body>
-<!-- <%- include('../includes/slideshow.ejs') %> -->
-<main>
-    <div class="grid">
-        <% if (products.length > 0) { 
-        for (let product of products) { %>
-        <article class="product">
-            <header class="product__header">
-                <h1 class="product__title"><%= product.title %></h1>
-            </header>
-            <div class="product__image">
-                <img src="<%= product.imageUrl %>" alt="pic">
-            </div>
-            <div class="product__content">
-                <h2 class="product__price"><%= product.price %> zł</h2>
-                <hr>
-                <p class="product__description">
-                    <%= product.description %></p>
-            </div>
-            <div class="product__actions"><a href=""></a></div>
-        </article>
-        <% }} else { %>
-        <h1>No Products Found!</h1>
-        <% } %>
-    </div>
-</main>
+    <!-- <%- include('../includes/slideshow.ejs') %> -->
 
-<%- include('../includes/end.ejs') %>
+    <main>
+        <div class="grid">
+            <% if (products.length > 0) { 
+        for (let product of products) { %>
+            <article class="product">
+                <header class="product__header">
+                    <h1 class="product__title"><%= product.title %></h1>
+                </header>
+                <div class="product__image">
+                    <img src="<%= product.imageUrl %>" alt="pic">
+                </div>
+                <div class="product__content">
+                    <h2 class="product__price"><%= product.price %> zł</h2>
+                    <hr>
+                    <p class="product__description">
+                        <%= product.description %></p>
+                </div>
+                <div class="product__actions"><a href=""></a></div>
+            </article>
+            <% }} else { %>
+            <h1>No Products Found!</h1>
+            <% } %>
+        </div>
+    </main>
+
+    <%- include('../includes/end.ejs') %>

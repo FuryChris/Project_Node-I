@@ -49,6 +49,11 @@ button {
   cursor: pointer;
 }
 
+p {
+  padding: 0px;
+  margin: 3px;
+}
+
 .centered {
   text-align: center;
 }
@@ -129,6 +134,23 @@ button {
   width: 100%;
   height: 10rem;
   object-fit: cover;
+}
+
+
+.user-message {
+  padding: 8px 0px;
+  background-color: rgba(255, 229, 164, 0.308);
+  margin: 0 auto;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.user-message--error {
+  border: 2px solid rgb(146, 4, 4);
+  background-color: rgba(255, 0, 0, 0.336);
+  color: red;
 }
 
 .test1 {

@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 const MONGO_CONNECTION = '';
 const app = express();
@@ -11,7 +12,12 @@ app.set('views', 'views')
 app.use(express.static(path.join(__dirname, 'public')));
 
 const shopRoutes = require('./routes/shop');
+const authRoutes = require('./routes/auth');
 
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(authRoutes);
 app.use(shopRoutes);
 
 
